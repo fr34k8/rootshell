@@ -27,4 +27,3 @@ fi
 echo "Alias: ${SHORT}"
 
 rsync -avz ${USERNAME}@web1.greyback.net:/home/${USERNAME}/public_html/webroot/ /var/www/${DOMAIN}/public_html/webroot/
-chown -R threeleaf.threeleaf /var/www/${DOMAIN}/public_html

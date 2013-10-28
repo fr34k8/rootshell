@@ -8,30 +8,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/myhostname
+~MSle0/Ser
 
 # Last Substitute Search Pattern:
-~MSle0&Garruk
+~MSle0~&Ajani
 
 # Last Substitute String:
-$Server2
+$Server1
 
 # Command Line History (newest to oldest):
 :wq
+:%s/Ajani/Server1/g
 :q
-:%s/Garruk/Server2/g
+:Wq
+:q!
+:s/app./apply./
+:s/app./apply./g
+:w
+:%s/home/var\/www/g
+:%s/testinstall/SHORT/g
+:Q
+:%s/wwwinstall/www\/install/g
+:%s/\/install.ajani.greyback.net/install/g
 
 # Search String History (newest to oldest):
-?/myhostname
-? Garruk
-?/%s/Garruk/Server1/g
-?/s:
-?/thumb
-?/Ajani
-?/ServerN
-?/:q
-?/user
+? Ajani
+?/Ser
+?/Stripe
+?/debug
+?/rewrite
+?/post
+?/upload
+? app.
+? home
+?/a2en
+?/apach
+? testinstall
+?/www-
 ?/www
+?/www-d
+? wwwinstall
+? \/install.ajani.greyback.net
+?/%s/public/plublic/
+?/ServerName
+?/Server
+?/index
 
 # Expression History (newest to oldest):
 
@@ -40,179 +61,244 @@ $Server2
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	LINE	0
+	
 ""1	LINE	0
-		ServerAlias fbc-amarillo.com www.fbc-amarillo.com
+		ServerAlias ypwf.ajani.greyback.net
 "2	LINE	0
-	ServerAlias fbc-amarillo.com www.fbc-amarillo.com
+		ServerAlias ymcawf.ajani.greyback.net
 "3	LINE	0
-		ServerAlias tootntotum.garruk.greyback.net
+		ServerAlias visioncup.ajani.greyback.net
+"4	LINE	0
+		ServerAlias tonymccallie.ajani.greyback.net
+"5	LINE	0
+		ServerAlias threeleaf.ajani.greyback.net
+"6	LINE	0
+		ServerAlias tfc.ajani.greyback.net
+"7	LINE	0
+		ServerAlias standrewsschool.ajani.greyback.net
+"8	LINE	0
+		ServerAlias inmanprojects.ajani.greyback.net
+"9	LINE	0
+		ServerAlias pleasebeacasa.ajani.greyback.net
+"-	CHAR	0
+	i
 
 # File marks:
-'0  2  3  ~/.gitignore
-'1  1  5  ~/.gitignore
-'2  1  0  /etc/postfix/main.cf
-'3  30  58  ~/rsync.sh
-'4  39  0  ~/migrate.sh
-'5  34  15  /etc/postfix/main.cf
-'6  62  4  /var/www/default/public_html/index.html
-'7  18  17  /var/www/default/public_html/index.html
-'8  10  24  /etc/apache2/sites-available/firstamarillo.org
-'9  28  0  /etc/apache2/sites-available/myrootsandwings.org
+'0  62  4  /var/www/default/public_html/index.html
+'1  6  51  /etc/apache2/sites-available/pleasebeacasa.org
+'2  29  118  ~/rsync.sh
+'3  2  0  ~/rsync.sh
+'4  52  0  ~/migrate.sh
+'5  3  24  /etc/apache2/sites-available/ypwf.org
+'6  3  26  /etc/apache2/sites-available/ymcawf.org
+'7  3  29  /etc/apache2/sites-available/visioncup.com
+'8  3  32  /etc/apache2/sites-available/tonymccallie.com
+'9  3  29  /etc/apache2/sites-available/threeleaf.net
 
 # Jumplist (newest first):
--'  2  3  ~/.gitignore
--'  1  0  ~/.gitignore
--'  1  0  /etc/postfix/main.cf
--'  30  58  ~/rsync.sh
--'  1  0  ~/rsync.sh
--'  39  0  ~/migrate.sh
--'  1  0  ~/migrate.sh
--'  34  15  /etc/postfix/main.cf
--'  9  16  /etc/postfix/main.cf
 -'  62  4  /var/www/default/public_html/index.html
 -'  1  0  /var/www/default/public_html/index.html
--'  18  17  /var/www/default/public_html/index.html
--'  10  24  /etc/apache2/sites-available/firstamarillo.org
--'  1  0  /etc/apache2/sites-available/firstamarillo.org
--'  28  0  /etc/apache2/sites-available/myrootsandwings.org
--'  1  0  /etc/apache2/sites-available/myrootsandwings.org
--'  20  19  /var/www/myrootsandwings.org/public_html/webroot/templates/page_templates/default.ctp
--'  1  0  /var/www/myrootsandwings.org/public_html/webroot/templates/page_templates/default.ctp
--'  10  28  /var/www/myrootsandwings.org/public_html/greyback_core/config/database.php
--'  1  0  /var/www/myrootsandwings.org/public_html/greyback_core/config/database.php
--'  10  19  /var/www/firstamarillo.org/public_html/greyback_core/config/database.php
--'  1  0  /var/www/firstamarillo.org/public_html/greyback_core/config/database.php
--'  2  18  /etc/apache2/sites-available/default
+-'  6  51  /etc/apache2/sites-available/pleasebeacasa.org
+-'  1  0  /etc/apache2/sites-available/pleasebeacasa.org
+-'  29  118  ~/rsync.sh
+-'  1  0  ~/rsync.sh
+-'  2  0  ~/rsync.sh
+-'  52  0  ~/migrate.sh
+-'  1  0  ~/migrate.sh
+-'  3  24  /etc/apache2/sites-available/ypwf.org
+-'  1  0  /etc/apache2/sites-available/ypwf.org
+-'  3  26  /etc/apache2/sites-available/ymcawf.org
+-'  1  0  /etc/apache2/sites-available/ymcawf.org
+-'  3  29  /etc/apache2/sites-available/visioncup.com
+-'  1  0  /etc/apache2/sites-available/visioncup.com
+-'  3  32  /etc/apache2/sites-available/tonymccallie.com
+-'  1  0  /etc/apache2/sites-available/tonymccallie.com
+-'  3  29  /etc/apache2/sites-available/threeleaf.net
+-'  1  0  /etc/apache2/sites-available/threeleaf.net
+-'  3  23  /etc/apache2/sites-available/tfc.org
+-'  1  0  /etc/apache2/sites-available/tfc.org
+-'  3  35  /etc/apache2/sites-available/standrewsschool.org
+-'  1  0  /etc/apache2/sites-available/standrewsschool.org
+-'  3  33  /etc/apache2/sites-available/projects.anthonyinman.com
+-'  1  0  /etc/apache2/sites-available/projects.anthonyinman.com
+-'  3  33  /etc/apache2/sites-available/pleasebeacasa.org
+-'  3  34  /etc/apache2/sites-available/masonmccleskey.com
+-'  1  0  /etc/apache2/sites-available/masonmccleskey.com
+-'  3  30  /etc/apache2/sites-available/intensives.com
+-'  1  0  /etc/apache2/sites-available/intensives.com
+-'  3  27  /etc/apache2/sites-available/install
+-'  1  0  /etc/apache2/sites-available/install
+-'  3  28  /etc/apache2/sites-available/greyback.net
+-'  1  0  /etc/apache2/sites-available/greyback.net
+-'  3  31  /etc/apache2/sites-available/foreverlawntexas.com
+-'  1  0  /etc/apache2/sites-available/foreverlawntexas.com
+-'  3  27  /etc/apache2/sites-available/fnbhome.com
+-'  1  0  /etc/apache2/sites-available/fnbhome.com
+-'  3  18  /etc/apache2/sites-available/default
 -'  1  0  /etc/apache2/sites-available/default
--'  3  30  /etc/apache2/sites-available/tootntotum.com
--'  1  0  /etc/apache2/sites-available/tootntotum.com
--'  12  13  /var/www/templates/apache
+-'  3  23  /etc/apache2/sites-available/cfn.org
+-'  1  0  /etc/apache2/sites-available/cfn.org
+-'  3  24  /etc/apache2/sites-available/cfni.org
+-'  1  0  /etc/apache2/sites-available/cfni.org
+-'  1  0  /etc/apache2/sites-available/apply.cfni.org
+-'  4  25  /etc/apache2/sites-available/bsapn.com
+-'  1  0  /etc/apache2/sites-available/bsapn.com
+-'  3  36  /etc/apache2/sites-available/apply.cfni.org
+-'  3  33  /etc/apache2/sites-available/anthonyinmanconstruction.com
+-'  1  0  /etc/apache2/sites-available/anthonyinmanconstruction.com
+-'  10  0  /etc/apache2/envvars
+-'  1  0  /etc/apache2/envvars
+-'  3  38  /etc/apache2/sites-available/amnat.com
+-'  1  0  /etc/apache2/sites-available/amnat.com
+-'  4  35  /etc/apache2/sites-available/amarillosymphony.org
+-'  1  0  /etc/apache2/sites-available/amarillosymphony.org
+-'  4  46  /etc/apache2/sites-available/41productions.com
+-'  1  0  /etc/apache2/sites-available/41productions.com
+-'  4  36  /var/www/templates/apache
 -'  1  0  /var/www/templates/apache
 -'  1  6  /etc/hostname
 -'  1  0  /etc/apache2/mods-available/disk_cache.conf
--'  52  28  /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
--'  1  0  /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
--'  1  0  /var/www/tootntotum.com/public_html/greyback_core/config/core.php
--'  13  70  /etc/rc.local
 -'  1  0  /etc/rc.local
--'  5  13  /var/www/default/public_html/index.html
--'  15  26  /etc/apache2/sites-available/default
--'  237  0  /etc/apache2/apache2.conf
+-'  237  12  /etc/apache2/apache2.conf
+-'  100  12  /etc/apache2/apache2.conf
+-'  99  9  /etc/apache2/apache2.conf
+-'  95  10  /etc/apache2/apache2.conf
+-'  94  10  /etc/apache2/apache2.conf
+-'  93  7  /etc/apache2/apache2.conf
+-'  89  3  /etc/apache2/apache2.conf
+-'  50  1  /etc/apache2/apache2.conf
+-'  40  2  /etc/apache2/apache2.conf
+-'  28  7  /etc/apache2/apache2.conf
+-'  27  25  /etc/apache2/apache2.conf
 -'  1  0  /etc/apache2/apache2.conf
--'  17  32  /etc/apache2/envvars
--'  1  0  /etc/apache2/envvars
--'  214  0  /etc/apache2/apache2.conf
--'  213  18  /etc/apache2/apache2.conf
--'  218  0  /etc/apache2/apache2.conf
--'  1  0  /etc/apache2/httpd.conf
--'  186  8  /etc/apache2/apache2.conf
--'  189  8  /etc/apache2/apache2.conf
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  1  0  /etc/apache2/httpd.conf
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  1  0  /etc/apache2/httpd.conf
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  1  0  /etc/apache2/httpd.conf
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  1  0  /etc/apache2/httpd.conf
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  25  51  /etc/passwd
--'  1  0  /etc/passwd
--'  52  28  /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
--'  1  6  /etc/hostname
--'  1  0  /etc/apache2/mods-available/disk_cache.conf
--'  52  28  /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
--'  1  0  /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
 -'  1  0  /var/www/tootntotum.com/public_html/greyback_core/config/core.php
--'  13  70  /etc/rc.local
--'  1  0  /etc/rc.local
--'  237  0  /etc/apache2/apache2.conf
--'  1  0  /etc/apache2/apache2.conf
--'  17  32  /etc/apache2/envvars
+-'  1  0  /var/www/tootntotum.com/public_html/greyback_core/config/database.php
+-'  45  0  ~/migrate.sh
+-'  10  27  /var/www/fnbhome.com/public_html/greyback_core/config/database.php
+-'  1  0  /var/www/fnbhome.com/public_html/greyback_core/config/database.php
+-'  8  41  /etc/apache2/sites-available/fnbhome.com
+-'  383  32  /var/www/dev.applytocfni.com/public_html/app/Controller/ApplicationsController.php
+-'  1  0  /var/www/dev.applytocfni.com/public_html/app/Controller/ApplicationsController.php
+-'  4  0  /var/www/dev.applytocfni.com/migratedatabase.sh
+-'  1  0  /var/www/dev.applytocfni.com/migratedatabase.sh
+-'  10  28  /var/www/dev.applytocfni.com/public_html/app/Config/database.php
+-'  1  0  /var/www/dev.applytocfni.com/public_html/app/Config/database.php
+-'  1  0  /var/www/dev.applytocfni.com/public_html/app/Config/database
+-'  1  0  /etc/apache2/sites-available/dev.applytocfni.com
+-'  11  0  ~/siteonly.sh
+-'  1  0  ~/siteonly.sh
+-'  31  24  /etc/apache2/ssl/www.thekingshouse.tv.crt
+-'  1  0  /etc/apache2/ssl/www.thekingshouse.tv.crt
+-'  36  27  /var/www/intensives.com/public_html/greyback_core/config/core.php
+-'  32  1  /var/www/intensives.com/public_html/greyback_core/config/core.php
+-'  1  0  /var/www/intensives.com/public_html/greyback_core/config/core.php
+-'  177  0  ~/.bash_history
+-'  1  0  ~/.bash_history
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	"	2	3
-	^	2	4
-	.	2	3
-	+	1	6
-	+	2	3
-
-> /etc/postfix/main.cf
-	"	1	0
-	^	34	16
-	.	34	16
-	+	30	32
-	+	34	16
-
-> ~/rsync.sh
-	"	30	58
-	^	30	59
-	.	30	58
-	+	30	58
-
-> ~/migrate.sh
-	"	39	0
-
 > /var/www/default/public_html/index.html
 	"	62	4
-	^	62	65
+	^	5	17
 	.	5	0
-	+	5	13
-	+	62	64
+	+	81	7
+	+	62	67
 	+	5	0
 
-> /etc/apache2/sites-available/firstamarillo.org
-	"	10	24
-	^	10	25
-	.	10	36
-	+	11	0
-	+	6	0
-	+	11	50
-	+	11	0
-	+	7	0
-	+	8	48
-	+	9	0
-	+	10	0
-	+	9	16
-	+	10	16
-	+	9	47
-	+	10	36
+> /etc/apache2/sites-available/pleasebeacasa.org
+	"	6	51
+	^	6	52
+	.	6	51
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	33
+	+	6	51
 
-> /etc/apache2/sites-available/myrootsandwings.org
-	"	28	0
-	^	28	0
-	.	28	0
+> ~/rsync.sh
+	"	29	118
+	^	29	119
+	.	29	118
+	+	1	11
+	+	27	0
+	+	10	0
+	+	13	33
+	+	15	1
+	+	17	11
+	+	21	10
+	+	25	9
+	+	28	33
+	+	29	79
+	+	29	0
+	+	29	118
+
+> ~/migrate.sh
+	"	52	0
+	.	18	0
+	+	29	0
+	+	28	0
+	+	52	1
+	+	43	0
+	+	43	0
+	+	12	14
+	+	15	1
+	+	14	7
+	+	15	4
+	+	16	10
+	+	18	0
+
+> /etc/apache2/sites-available/ypwf.org
+	"	3	24
+	^	3	25
+	.	3	24
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	24
+
+> /etc/apache2/sites-available/ymcawf.org
+	"	3	26
+	^	3	27
+	.	3	26
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	26
+
+> /etc/apache2/sites-available/visioncup.com
+	"	3	29
+	^	3	30
+	.	3	29
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	29
+
+> /etc/apache2/sites-available/tonymccallie.com
+	"	3	32
+	^	3	33
+	.	3	32
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	32
+
+> /etc/apache2/sites-available/threeleaf.net
+	"	3	29
+	^	3	30
+	.	3	29
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	29
+
+> /etc/apache2/sites-available/tfc.org
+	"	3	23
+	^	3	24
+	.	3	23
+	+	7	0
+	+	6	28
 	+	14	0
 	+	15	0
 	+	16	0
@@ -228,36 +314,40 @@ $Server2
 	+	26	0
 	+	27	0
 	+	28	0
+	+	14	14
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	23
 
-> /var/www/myrootsandwings.org/public_html/webroot/templates/page_templates/default.ctp
-	"	20	19
-	^	20	20
-	.	20	19
-	+	20	19
+> /etc/apache2/sites-available/standrewsschool.org
+	"	3	35
+	^	3	36
+	.	3	35
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	35
 
-> /var/www/myrootsandwings.org/public_html/greyback_core/config/database.php
-	"	10	28
-	^	10	29
-	.	10	28
-	+	8	25
-	+	10	28
+> /etc/apache2/sites-available/projects.anthonyinman.com
+	"	3	33
+	^	3	34
+	.	3	33
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	33
 
-> /var/www/firstamarillo.org/public_html/greyback_core/config/database.php
-	"	10	19
-	^	10	20
-	.	10	19
-	+	8	16
-	+	10	19
+> /etc/apache2/sites-available/masonmccleskey.com
+	"	3	34
+	^	3	35
+	.	3	34
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	34
 
-> /etc/apache2/sites-available/default
-	"	2	18
-	^	2	19
-	.	2	18
-	+	2	17
-	+	15	14
-	+	2	18
-
-> /etc/apache2/sites-available/tootntotum.com
+> /etc/apache2/sites-available/intensives.com
 	"	3	30
 	^	3	31
 	.	3	30
@@ -266,11 +356,178 @@ $Server2
 	+	4	0
 	+	3	30
 
+> /etc/apache2/sites-available/install
+	"	3	27
+	^	3	28
+	.	3	27
+	+	3	13
+	+	4	0
+	+	3	27
+
+> /etc/apache2/sites-available/greyback.net
+	"	3	28
+	^	3	29
+	.	3	28
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	28
+
+> /etc/apache2/sites-available/foreverlawntexas.com
+	"	3	31
+	^	3	32
+	.	3	31
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	31
+
+> /etc/apache2/sites-available/fnbhome.com
+	"	3	27
+	^	3	28
+	.	3	27
+	+	9	0
+	+	7	100
+	+	7	48
+	+	8	41
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	27
+
+> /etc/apache2/sites-available/default
+	"	3	18
+	^	3	19
+	.	3	19
+	+	28	0
+	+	12	10
+	+	11	10
+	+	15	14
+	+	21	11
+	+	22	12
+	+	2	18
+	+	3	19
+
+> /etc/apache2/sites-available/cfn.org
+	"	3	23
+	^	3	24
+	.	3	23
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	23
+
+> /etc/apache2/sites-available/cfni.org
+	"	3	24
+	^	3	25
+	.	3	24
+	+	5	0
+	+	3	0
+	+	4	0
+	+	3	24
+
+> /etc/apache2/sites-available/apply.cfni.org
+	"	1	0
+	^	3	37
+	.	3	36
+	+	2	0
+	+	3	21
+	+	5	21
+	+	6	28
+	+	10	33
+	+	11	33
+	+	15	18
+	+	16	23
+	+	17	29
+	+	19	27
+	+	22	35
+	+	23	35
+	+	26	47
+	+	27	50
+	+	14	27
+	+	26	39
+	+	27	42
+	+	3	36
+
+> /etc/apache2/sites-available/bsapn.com
+	"	4	25
+	^	4	26
+	.	4	25
+	+	3	0
+	+	4	0
+	+	5	0
+	+	4	25
+
+> /etc/apache2/sites-available/anthonyinmanconstruction.com
+	"	3	33
+	^	3	34
+	.	3	33
+	+	3	33
+
+> /etc/apache2/envvars
+	"	10	0
+	^	17	33
+	.	17	32
+	+	16	31
+	+	17	32
+
+> /etc/apache2/sites-available/amnat.com
+	"	3	38
+	^	3	39
+	.	3	38
+	+	14	0
+	+	14	33
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	14	33
+	+	14	33
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	3	38
+
+> /etc/apache2/sites-available/amarillosymphony.org
+	"	4	35
+	^	4	36
+	.	4	35
+	+	4	35
+
+> /etc/apache2/sites-available/41productions.com
+	"	4	46
+	^	4	47
+	.	4	46
+	+	5	0
+	+	4	46
+
 > /var/www/templates/apache
-	"	12	13
-	^	12	14
-	.	4	37
-	+	4	37
+	"	4	36
+	^	4	37
+	.	4	36
+	+	3	17
+	+	5	0
+	+	4	36
 
 > /etc/hostname
 	"	1	6
@@ -281,36 +538,592 @@ $Server2
 > /etc/apache2/mods-available/disk_cache.conf
 	"	1	0
 
-> /var/www/tootntotum.com/public_html/greyback_core/controllers/images_controller.php
-	"	52	28
-	^	52	29
-	.	52	28
-	+	52	28
-
-> /var/www/tootntotum.com/public_html/greyback_core/config/core.php
-	"	1	0
-
 > /etc/rc.local
-	"	13	70
+	"	1	0
 	^	13	71
 	.	13	67
 	+	13	67
 
 > /etc/apache2/apache2.conf
-	"	237	0
+	"	237	12
 
-> /etc/apache2/envvars
-	"	17	32
-	^	17	33
-	.	17	32
-	+	16	31
-	+	17	32
-
-> /etc/apache2/httpd.conf
+> /var/www/tootntotum.com/public_html/greyback_core/config/core.php
 	"	1	0
 
+> /var/www/tootntotum.com/public_html/greyback_core/config/database.php
+	"	1	0
+
+> /var/www/fnbhome.com/public_html/greyback_core/config/database.php
+	"	10	27
+	^	10	28
+	.	10	27
+	+	8	24
+	+	10	27
+
+> /var/www/dev.applytocfni.com/public_html/app/Controller/ApplicationsController.php
+	"	383	32
+
+> /var/www/dev.applytocfni.com/migratedatabase.sh
+	"	4	0
+	^	4	0
+	.	4	0
+	+	4	0
+	+	3	0
+	+	4	0
+
+> /var/www/dev.applytocfni.com/public_html/app/Config/database.php
+	"	10	28
+	^	10	29
+	.	10	28
+	+	8	25
+	+	10	28
+
+> /var/www/dev.applytocfni.com/public_html/app/Config/database
+	"	1	0
+
+> /etc/apache2/sites-available/dev.applytocfni.com
+	"	1	0
+
+> ~/siteonly.sh
+	"	11	0
+	.	11	0
+	+	22	0
+	+	25	0
+	+	16	0
+	+	11	0
+
+> /etc/apache2/ssl/www.thekingshouse.tv.crt
+	"	31	24
+	^	31	25
+	.	31	0
+	+	31	0
+
+> /var/www/intensives.com/public_html/greyback_core/config/core.php
+	"	36	27
+	^	36	28
+	.	36	27
+	+	36	27
+
+> ~/.bash_history
+	"	177	0
+
+> /etc/apache2/mods-enabled/rewrite.load
+	"	1	0
+
+> /etc/apache2/mods-enabled/disk_cache.conf
+	"	15	0
+	^	15	1
+	.	15	1
+	+	15	1
+
+> /tmp/crontab.QM9bjZ/crontab
+	"	1	0
+
+> /etc/network/interfaces
+	"	25	21
+	^	25	22
+	.	25	21
+	+	11	20
+	+	13	19
+	+	17	21
+	+	11	0
+	+	12	0
+	+	13	0
+	+	16	22
+	+	9	15
+	+	21	21
+	+	20	21
+	+	25	21
+
+> /etc/apache2/ssl/www.tfc.org.crt
+	"	30	24
+	^	30	25
+	.	30	0
+	+	30	0
+
+> /etc/apache2/sites-enabled/apply.cfni.org
+	"	28	59
+	^	28	60
+	.	28	59
+	+	5	32
+	+	6	27
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	59
+	+	28	59
+	+	29	0
+	+	27	56
+	+	28	59
+
+> /etc/apache2/ssl/www.applytocfni.com.crt
+	"	31	24
+	^	31	25
+	.	31	0
+	+	31	0
+
+> ~/updater.sh
+	"	1	0
+	^	22	71
+	.	22	71
+	+	26	0
+	+	13	0
+	+	11	22
+	+	16	19
+	+	2	11
+	+	19	0
+	+	20	11
+	+	21	30
+	+	11	5
+	+	4	14
+	+	8	0
+	+	8	3
+	+	7	20
+	+	9	6
+	+	7	4
+	+	9	4
+	+	11	11
+	+	13	0
+	+	11	6
+	+	11	3
+	+	11	0
+	+	4	39
+	+	22	71
+
+> /var/www/greyback.net/public_html/plugins/mcp/models/mcp_account.php
+	"	8	0
+
+> /var/www/greyback.net/public_html/plugins/mcp/mcp_app_model.php
+	"	1	0
+
+> ~/upgrade.sh
+	"	1	0
+	^	15	34
+	.	15	33
+	+	13	0
+	+	13	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	18	0
+	+	22	47
+	+	21	0
+	+	23	0
+	+	23	0
+	+	15	33
+
+> ~/install.sh
+	"	16	1
+	^	16	2
+	.	16	0
+	+	20	0
+	+	39	17
+	+	30	0
+	+	25	15
+	+	11	33
+	+	20	0
+	+	20	0
+	+	20	0
+	+	19	0
+	+	19	0
+	+	20	0
+	+	45	0
+	+	20	0
+	+	46	0
+	+	20	0
+	+	53	0
+	+	20	0
+	+	52	0
+	+	20	0
+	+	41	0
+	+	53	14
+	+	11	0
+	+	30	21
+	+	33	17
+	+	43	70
+	+	42	0
+	+	43	70
+	+	44	0
+	+	43	64
+	+	48	14
+	+	49	0
+	+	49	59
+	+	39	0
+	+	25	0
+	+	53	20
+	+	55	93
+	+	64	20
+	+	33	34
+	+	24	69
+	+	25	0
+	+	19	61
+	+	19	5
+	+	51	36
+	+	42	60
+	+	33	42
+	+	19	60
+	+	33	60
+	+	42	60
+	+	51	56
+	+	8	0
+	+	2	14
+	+	7	3
+	+	5	42
+	+	4	3
+	+	7	1
+	+	6	6
+	+	19	0
+	+	57	16
+	+	51	97
+	+	39	26
+	+	19	24
+	+	22	33
+	+	30	27
+	+	30	18
+	+	33	22
+	+	41	19
+	+	44	30
+	+	47	14
+	+	49	0
+	+	50	26
+	+	53	6
+	+	50	11
+	+	53	26
+	+	56	35
+	+	58	14
+	+	2	0
+	+	2	16
+	+	2	0
+	+	51	113
+	+	45	5
+	+	45	96
+	+	45	0
+	+	45	90
+	+	30	0
+	+	46	0
+	+	30	0
+	+	46	0
+	+	30	0
+	+	46	0
+	+	46	0
+	+	27	0
+	+	46	0
+	+	28	0
+	+	46	0
+	+	29	0
+	+	36	0
+	+	35	54
+	+	58	22
+	+	11	14
+	+	16	0
+	y	55	0
+
+> ~/uninstall.sh
+	"	24	0
+	^	24	106
+	.	25	0
+	+	25	0
+	+	13	28
+	+	25	0
+	+	15	22
+	+	14	4
+	+	17	29
+	+	18	43
+	+	20	13
+	+	21	25
+	+	23	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	25	0
+	+	23	22
+	+	25	5
+	+	23	22
+	+	23	22
+	+	24	104
+	+	25	0
+
+> /var/www/default/public_html/email.php
+	"	2	11
+	^	2	12
+	.	2	11
+	+	3	51
+	+	4	1
+	+	3	4
+	+	2	11
+
+> /etc/php5/apache2/php.ini
+	"	740	19
+	^	740	20
+	.	740	19
+	+	891	25
+	+	740	19
+
+> ~/tfc_upgraded.sql
+	"	1	0
+
+> /var/www/ymcawf.org/public_html/plugins/ymca/models/ymca_event.php
+	"	1	0
+
+> /var/www/ymcawf.org/public_html/plugins/text_replace.sh
+	"	1	42
+	^	1	43
+	.	1	42
+	+	1	42
+
+> /etc/apache2/sites-available/app.cfni.org
+	"	4	16
+	^	4	17
+	.	3	16
+	+	3	16
+
+> /var/www/tfc.org/public_html/webroot/templates/elements/head.ctp
+	"	11	0
+
+> /var/www/tfc.org/public_html/.git/config
+	"	14	24
+	^	14	25
+	.	14	1
+	+	14	1
+
+> /var/www/tfc.org/public_html/greyback_core/config/core.php
+	"	1	0
+
+> /var/www/threeleaf.net/public_html/webroot/test.php
+	"	2	39
+	^	2	40
+	.	2	39
+	+	3	0
+	+	2	39
+
+> ~/update.sql
+	"	1	81
+	^	1	82
+	.	1	81
+	+	1	0
+	+	1	81
+
+> ~/sqlupdate.sh
+	"	4	64
+	^	4	65
+	.	4	64
+	+	5	0
+	+	2	78
+	+	2	0
+	+	4	64
+
+> ~/less.sh
+	"	9	40
+	^	9	41
+	.	9	40
+	+	2	100
+	+	7	0
+	+	7	0
+	+	8	111
+	+	9	40
+
+> ~/.ssh/authorized_keys
+	"	1	620
+	^	1	621
+	.	1	578
+	+	1	182
+	+	1	578
+
+> /var/www/templates/users.sql
+	"	4	0
+	^	4	0
+	.	3	40
+	+	12	150
+	+	1	0
+	+	8	296
+	+	1	274
+	+	1	135
+	+	6	135
+	+	7	135
+	+	8	135
+	+	1	0
+	+	3	40
+
+> /var/www/templates/database.php
+	"	5	8
+	^	5	9
+	.	5	8
+	+	9	22
+	+	3	1
+	+	3	0
+	+	3	3
+	+	5	19
+	+	3	0
+	+	12	0
+	+	5	8
+
+> /var/www/templates/database.sql
+	"	3	58
+	^	3	59
+	.	3	58
+	+	1	45
+	+	9	16
+	+	3	58
+
+> /var/www/tonymccallie.com/public_html/greyback_core/config/database.php
+	"	9	22
+	^	9	23
+	.	10	0
+	+	10	0
+
+> /var/www/install.sh
+	"	35	45
+	^	35	46
+	.	35	45
+	+	21	28
+	+	13	45
+	+	6	5
+	+	4	0
+	+	2	7
+	+	4	19
+	+	5	10
+	+	2	6
+	+	4	15
+	+	2	7
+	+	4	6
+	+	2	11
+	+	3	13
+	+	5	6
+	+	4	16
+	+	3	23
+	+	5	21
+	+	3	23
+	+	5	21
+	+	6	0
+	+	13	53
+	+	8	20
+	+	13	124
+	+	14	86
+	+	7	0
+	+	1	20
+	+	1	11
+	+	1	11
+	+	38	0
+	+	33	0
+	+	25	0
+	+	22	0
+	+	15	0
+	+	10	0
+	+	2	0
+	+	34	15
+	+	35	45
+
+> /var/www/templates/sql
+	"	7	39
+	^	7	40
+	.	7	39
+	+	7	0
+	+	1	0
+	+	5	45
+	+	7	39
+	y	1	0
+
+> /etc/php5/fpm/pool.d/www.conf
+	"	44	24
+	^	45	25
+	.	45	24
+	+	22	15
+	+	23	16
+	+	44	24
+	+	45	24
+
+> /etc/group
+	"	54	0
+
 > /etc/passwd
-	"	25	51
-	^	25	52
-	.	25	51
-	+	25	51
+	"	26	51
+	^	26	52
+	.	26	51
+	+	26	51
+
+> /var/www/templates/core
+	"	294	1
+	^	294	2
+	.	294	0
+	+	294	0
+
+> /var/www/templates/database
+	"	10	30
+	^	10	31
+	.	10	30
+	+	15	0
+	+	8	18
+	+	10	30
+
+> /etc/hosts
+	"	3	30
+	^	3	31
+	.	3	30
+	+	3	30
+
+> /var/www/default/public_html/css/styles.less
+	"	7	31
+	^	7	32
+	.	7	31
+	+	7	31
+
+> /etc/apache2/sites-available/site_template
+	"	27	0
+	^	27	1
+	.	27	0
+	+	1	7
+	+	1	18
+	+	28	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+
+> /var/www/default/public_html/index.php
+	"	1	22
+	^	1	23
+	.	1	22
+	+	1	22
+
+> /etc/logrotate.d/apache2
+	"	1	0
+
+> /etc/apache2/httpd.conf
+	"	1	11
+	^	1	12
+	.	1	11
+	+	1	11
+
+> /var/www/index.php
+	"	1	23
+	^	1	24
+	.	1	23
+	+	3	1
+	+	1	23
+
+> ~/site_template
+	"	1	0
+	^	28	11
+	.	28	0
+	+	28	0
